@@ -155,6 +155,9 @@ export const UserProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
     const emailSignUp = async (email: string, password: string, name: string) => {
         await signUpWithEmail(email, password, name);
+        // onAuthStateChanged fires before updateProfile finishes,
+        // so manually update the user state with the correct displayName
+        setUser(prev => prev ? { ...prev, name } : prev);
     };
 
     return (
