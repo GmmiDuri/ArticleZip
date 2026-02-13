@@ -1,0 +1,422 @@
+[
+    {
+        "title": "커피와 차 섭취, 치매 위험, 인지 기능",
+        "original_title": "Coffee and Tea Intake, Dementia Risk, and Cognitive Function.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41661604/",
+        "press": "JAMA",
+        "published_date": "2026-02-10",
+        "content_summary": "카페인이 함유된 커피와 차의 섭취량이 많을수록 치매 위험이 낮고 인지 기능이 소폭 향상되었으며, 적당한 섭취 수준에서 가장 뚜렷한 연관성이 관찰되었다.",
+        "created_at": "2026-02-12T00:00:00",
+        "summary_bullets": [
+            "PubMed Trending #1"
+        ],
+        "keywords": [
+            "coffee",
+            "tea",
+            "dementia",
+            "cognitive function"
+        ],
+        "clinical_impact": "High",
+        "vector": [
+            0.7,
+            0.3,
+            0.5,
+            0.2,
+            0.6
+        ],
+        "recommendation_score": 0,
+        "image_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "title": "유방암 종양 미세환경에서 감각 뉴런이 면역 배제를 유도하는 조밀한 세포외 기질 자극",
+        "original_title": "Sensory neurons drive immune exclusion by stimulating a dense extracellular matrix in the breast cancer tumor microenvironment.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41650969/",
+        "press": "Cell",
+        "published_date": "2026-02-06",
+        "content_summary": "유방암 미세환경에서 감각 뉴런이 세포외 기질 생성을 자극하여 면역 세포가 종양을 공격하지 못하도록 하는 장벽을 형성하는 메커니즘을 밝혔다.",
+        "created_at": "2026-02-12T00:00:00",
+        "summary_bullets": [
+            "PubMed Trending #3"
+        ],
+        "keywords": [
+            "breast cancer",
+            "sensory neurons",
+            "immune exclusion",
+            "tumor microenvironment"
+        ],
+        "clinical_impact": "High",
+        "vector": [
+            0.6,
+            0.8,
+            0.3,
+            0.7,
+            0.4
+        ],
+        "recommendation_score": 0,
+        "image_url": "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "title": "파킨슨병: 체성-인지 행동 네트워크 장애로서의 재해석",
+        "original_title": "Parkinson's disease as a somato-cognitive action network disorder.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41639440/",
+        "press": "Nature",
+        "published_date": "2026-02-05",
+        "content_summary": "파킨슨병을 체성-인지 행동 네트워크 장애로 재정의하는 새로운 개념적 틀을 제시하며, 운동 및 인지 증상을 통합된 신경 구조 아래 설명한다.",
+        "created_at": "2026-02-12T00:00:00",
+        "summary_bullets": [
+            "PubMed Trending #4"
+        ],
+        "keywords": [
+            "Parkinson's disease",
+            "neural network",
+            "cognition",
+            "motor function"
+        ],
+        "clinical_impact": "High",
+        "vector": [
+            0.8,
+            0.5,
+            0.4,
+            0.6,
+            0.3
+        ],
+        "recommendation_score": 0,
+        "image_url": "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "title": "암의 특징 — 과거와 현재, 그리고 그 너머",
+        "original_title": "Hallmarks of cancer — Then and now, and beyond.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41616779/",
+        "press": "Cell",
+        "published_date": "2026-02-03",
+        "content_summary": "암의 특징 프레임워크를 재조명한 최신 종합 리뷰로, 종양 생물학, 면역학, 종양 미세환경의 최근 발전을 통합하여 정리하였다.",
+        "created_at": "2026-02-12T00:00:00",
+        "summary_bullets": [
+            "PubMed Trending #6"
+        ],
+        "keywords": [
+            "hallmarks of cancer",
+            "tumor biology",
+            "immunology",
+            "review"
+        ],
+        "clinical_impact": "High",
+        "vector": [
+            0.5,
+            0.9,
+            0.2,
+            0.8,
+            0.5
+        ],
+        "recommendation_score": 0,
+        "image_url": "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "title": "항섬유화 약물 피네레논이 조기 난소 부전에서 가임력을 회복시킨다",
+        "original_title": "Antifibrotic drug finerenone restores fertility in premature ovarian insufficiency.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41643022/",
+        "press": "Science",
+        "published_date": "2026-02-05",
+        "content_summary": "항섬유화 약물인 피네레논이 조기 난소 부전 동물 모델에서 가임력을 회복시킬 수 있음을 보여주는 획기적인 연구로, 생식의학의 새로운 치료 가능성을 제시한다.",
+        "created_at": "2026-02-12T00:00:00",
+        "summary_bullets": [
+            "PubMed Trending #9"
+        ],
+        "keywords": [
+            "finerenone",
+            "premature ovarian insufficiency",
+            "fertility",
+            "antifibrotic"
+        ],
+        "clinical_impact": "High",
+        "vector": [
+            0.9,
+            0.4,
+            0.6,
+            0.2,
+            0.5
+        ],
+        "recommendation_score": 0,
+        "image_url": "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "title": "종양-뇌 교차 작용이 감각-교감 축을 통해 암 면역을 억제한다",
+        "original_title": "Tumour-brain crosstalk restrains cancer immunity via a sensory-sympathetic axis.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41639447/",
+        "press": "Nature",
+        "published_date": "2026-02-05",
+        "content_summary": "종양이 감각-교감 신경 축을 통해 뇌와 소통하며, 이를 통해 항암 면역 반응을 억제하는 새로운 면역 회피 메커니즘을 밝힌 연구이다.",
+        "created_at": "2026-02-12T00:00:00",
+        "summary_bullets": [
+            "PubMed Trending #10"
+        ],
+        "keywords": [
+            "tumor-brain crosstalk",
+            "cancer immunity",
+            "sympathetic axis",
+            "neuroimmunology"
+        ],
+        "clinical_impact": "High",
+        "vector": [
+            0.6,
+            0.85,
+            0.3,
+            0.7,
+            0.4
+        ],
+        "recommendation_score": 0,
+        "image_url": "https://images.unsplash.com/photo-1628595351029-c2bf17511435?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "title": "비소세포폐암에서의 시간대별 면역화학요법: 무작위 3상 시험",
+        "original_title": "Time-of-day immunochemotherapy in non-small cell lung cancer: a randomized phase 3 trial.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41629425/",
+        "press": "Nature Medicine",
+        "published_date": "2026-02-03",
+        "content_summary": "비소세포폐암에서 면역화학요법 투여 시간대가 치료 결과에 미치는 영향을 조사한 3상 무작위 시험으로, 종양학에서의 시간 치료 적용 가능성을 시사한다.",
+        "created_at": "2026-02-12T00:00:00",
+        "summary_bullets": [
+            "PubMed Trending #11"
+        ],
+        "keywords": [
+            "NSCLC",
+            "immunochemotherapy",
+            "chronotherapy",
+            "clinical trial"
+        ],
+        "clinical_impact": "High",
+        "vector": [
+            0.85,
+            0.3,
+            0.5,
+            0.4,
+            0.6
+        ],
+        "recommendation_score": 0,
+        "image_url": "https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "title": "수면 장애가 미주신경 회로의 비정상적 활성화를 유발하고 장 줄기세포 기능 장애를 일으킨다",
+        "original_title": "Sleep disturbance triggers aberrant activation of vagus circuitry and induces intestinal stem cell dysfunction.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41650935/",
+        "press": "Cell Stem Cell",
+        "published_date": "2026-02-06",
+        "content_summary": "수면 장애와 장 건강 사이의 기전적 연관성을 밝힌 연구로, 수면 교란이 미주신경 회로를 활성화하여 장 줄기세포 기능을 손상시킨다는 것을 보여준다.",
+        "created_at": "2026-02-12T00:00:00",
+        "summary_bullets": [
+            "PubMed Trending #12"
+        ],
+        "keywords": [
+            "sleep",
+            "vagus nerve",
+            "intestinal stem cells",
+            "gut health"
+        ],
+        "clinical_impact": "High",
+        "vector": [
+            0.7,
+            0.6,
+            0.4,
+            0.5,
+            0.3
+        ],
+        "recommendation_score": 0,
+        "image_url": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "title": "알츠하이머병 및 기타 신경퇴행성 치매의 생체액 바이오마커",
+        "original_title": "Biofluid biomarkers in Alzheimer's disease and other neurodegenerative dementias.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41639575/",
+        "press": "Nature",
+        "published_date": "2026-02-05",
+        "content_summary": "알츠하이머병 및 기타 신경퇴행성 치매의 진단, 병기 결정, 모니터링을 위한 현재 및 신규 생체액 바이오마커(뇌척수액, 혈액)에 대한 종합 리뷰이다.",
+        "created_at": "2026-02-12T00:00:00",
+        "summary_bullets": [
+            "PubMed Trending #18"
+        ],
+        "keywords": [
+            "Alzheimer's",
+            "biomarkers",
+            "neurodegenerative",
+            "dementia"
+        ],
+        "clinical_impact": "High",
+        "vector": [
+            0.8,
+            0.5,
+            0.5,
+            0.3,
+            0.6
+        ],
+        "recommendation_score": 0,
+        "image_url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "title": "스타틴 치료에 기인한 부작용 평가: 이중맹검 무작위대조시험의 메타분석",
+        "original_title": "Assessment of adverse effects attributed to statin therapy in product labels: a meta-analysis of double-blind randomised controlled trials.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41655587/",
+        "press": "The Lancet",
+        "published_date": "2026-02-08",
+        "content_summary": "이중맹검 무작위대조시험의 메타분석을 통해 스타틴 치료에 기인한 부작용의 실제 발생률을 평가하고, 제품 라벨에 기재된 부작용 우려를 검증하였다.",
+        "created_at": "2026-02-12T00:00:00",
+        "summary_bullets": [
+            "PubMed Trending #19"
+        ],
+        "keywords": [
+            "statins",
+            "adverse effects",
+            "meta-analysis",
+            "RCT"
+        ],
+        "clinical_impact": "High",
+        "vector": [
+            0.9,
+            0.2,
+            0.7,
+            0.1,
+            0.5
+        ],
+        "recommendation_score": 0,
+        "image_url": "https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "title": "SOD1 근위축성 측삭 경화증에서의 장기 토페르센 치료",
+        "original_title": "Long-Term Tofersen in SOD1 Amyotrophic Lateral Sclerosis.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41661214/",
+        "press": "JAMA Neurology",
+        "published_date": "2026-02-10",
+        "content_summary": "SOD1 변이 ALS 환자에서 안티센스 올리고뉴클레오티드 치료제인 토페르센의 장기 추적 데이터로, 질병 바이오마커 및 임상 진행에 대한 지속적 효과를 입증하였다.",
+        "created_at": "2026-02-12T00:00:00",
+        "summary_bullets": [
+            "PubMed Trending #20"
+        ],
+        "keywords": [
+            "tofersen",
+            "ALS",
+            "SOD1",
+            "antisense oligonucleotide"
+        ],
+        "clinical_impact": "High",
+        "vector": [
+            0.85,
+            0.4,
+            0.5,
+            0.3,
+            0.6
+        ],
+        "recommendation_score": 0,
+        "image_url": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "title": "급성 비대혈관 폐색, 허혈성 뇌졸중 4.5~24시간 후 테넥테플라제: OPTION 무작위 임상시험",
+        "original_title": "Tenecteplase for Acute Non-Large Vessel Occlusion 4.5 to 24 Hours After Ischemic Stroke: The OPTION Randomized Clinical Trial.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41642827/",
+        "press": "JAMA",
+        "published_date": "2026-02-05",
+        "content_summary": "비대혈관 폐색 허혈성 뇌졸중에서 4.5~24시간 확장 시간대에 테넥테플라제를 평가한 OPTION 시험으로, 더 많은 뇌졸중 환자에게 혈전용해 치료 옵션을 확대할 가능성을 제시한다.",
+        "created_at": "2026-02-12T00:00:00",
+        "summary_bullets": [
+            "PubMed Trending #21"
+        ],
+        "keywords": [
+            "tenecteplase",
+            "stroke",
+            "thrombolysis",
+            "clinical trial"
+        ],
+        "clinical_impact": "High",
+        "vector": [
+            0.9,
+            0.2,
+            0.6,
+            0.1,
+            0.5
+        ],
+        "recommendation_score": 0,
+        "image_url": "https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "title": "수정 가능한 위험 요인에 기인한 전 세계 및 지역별 암 부담: 예방을 위한 정보 제공",
+        "original_title": "Global and regional cancer burden attributable to modifiable risk factors to inform prevention.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41634393/",
+        "press": "Nature Medicine",
+        "published_date": "2026-02-04",
+        "content_summary": "수정 가능한 위험 요인에 기인한 전 세계 및 지역별 암 부담을 정량화한 대규모 분석으로, 전 세계 암 예방 전략 수립에 필요한 핵심 데이터를 제공한다.",
+        "created_at": "2026-02-12T00:00:00",
+        "summary_bullets": [
+            "PubMed Trending #23"
+        ],
+        "keywords": [
+            "cancer burden",
+            "modifiable risk factors",
+            "prevention",
+            "global health"
+        ],
+        "clinical_impact": "High",
+        "vector": [
+            0.8,
+            0.3,
+            0.7,
+            0.2,
+            0.6
+        ],
+        "recommendation_score": 0,
+        "image_url": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "title": "알츠하이머병을 위한 키메라 항원 수용체 CD4 T 세포 공학",
+        "original_title": "Engineering chimeric antigen receptor CD4 T cells for Alzheimer's disease.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41662521/",
+        "press": "PNAS",
+        "published_date": "2026-02-10",
+        "content_summary": "암 면역치료에 주로 사용되는 CAR T 세포 기술을 알츠하이머병에 적용한 선구적 연구로, CD4 T 세포를 설계하여 뇌의 병리적 침착물을 표적 제거한다.",
+        "created_at": "2026-02-12T00:00:00",
+        "summary_bullets": [
+            "PubMed Trending #44"
+        ],
+        "keywords": [
+            "CAR-T cells",
+            "Alzheimer's",
+            "immunotherapy",
+            "neuroscience"
+        ],
+        "clinical_impact": "High",
+        "vector": [
+            0.75,
+            0.7,
+            0.4,
+            0.6,
+            0.5
+        ],
+        "recommendation_score": 0,
+        "image_url": "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "title": "중국에서 자궁경부암 검진 시 월경혈을 이용한 인유두종바이러스 검사",
+        "original_title": "Testing menstrual blood for human papillomavirus during cervical cancer screening in China: cross sectional population based study.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41638692/",
+        "press": "BMJ",
+        "published_date": "2026-02-04",
+        "content_summary": "중국에서 자궁경부암 검진의 대안으로 월경혈을 이용한 HPV 검사의 실현 가능성과 정확도를 평가한 인구 기반 연구로, 검진 접근성 향상 가능성을 제시한다.",
+        "created_at": "2026-02-12T00:00:00",
+        "summary_bullets": [
+            "PubMed Trending #49"
+        ],
+        "keywords": [
+            "HPV",
+            "cervical cancer",
+            "screening",
+            "menstrual blood"
+        ],
+        "clinical_impact": "High",
+        "vector": [
+            0.85,
+            0.3,
+            0.6,
+            0.2,
+            0.5
+        ],
+        "recommendation_score": 0,
+        "image_url": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800"
+    }
+]
