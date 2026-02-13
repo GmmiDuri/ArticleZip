@@ -48,7 +48,11 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article, onClick }) => {
                                 href={article.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                onClick={(e) => e.stopPropagation()}
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    // 제목 클릭 시에도 readArticle 트리거
+                                    if (onClick) onClick();
+                                }}
                                 className="text-lg font-bold text-white hover:text-yellow-400 transition-colors line-clamp-2 leading-snug"
                             >
                                 {article.original_title || article.title}
