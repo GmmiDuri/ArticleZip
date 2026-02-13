@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Newspaper, User, Home, LogIn, LogOut, X, Mail } from 'lucide-react';
+import { Newspaper, User, Home, LogIn, LogOut, X, UserPlus } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { useUser } from '../context/UserContext';
 
@@ -13,9 +13,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
     const [showAuthModal, setShowAuthModal] = useState(false);
     const [isSignUp, setIsSignUp] = useState(false);
-    const [email, setEmail] = useState('');
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [displayName, setDisplayName] = useState('');
+    const [passwordConfirm, setPasswordConfirm] = useState('');
     const [authError, setAuthError] = useState('');
     const [authLoading, setAuthLoading] = useState(false);
 
@@ -25,9 +25,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     ];
 
     const resetForm = () => {
-        setEmail('');
+        setUsername('');
         setPassword('');
-        setDisplayName('');
+        setPasswordConfirm('');
         setAuthError('');
         setAuthLoading(false);
     };
@@ -38,33 +38,40 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         setShowAuthModal(true);
     };
 
-    const handleEmailAuth = async (e: React.FormEvent) => {
+    const handleAuth = async (e: React.FormEvent) => {
         e.preventDefault();
         setAuthError('');
+
+        if (!username.trim()) {
+            setAuthError('아이디를 입력해주세요.');
+            return;
+        }
+
+        if (isSignUp && password !== passwordConfirm) {
+            setAuthError('비밀번호가 일치하지 않습니다.');
+            return;
+        }
+
         setAuthLoading(true);
+        // 아이디를 내부 이메일로 변환
+        const internalEmail = `${username.trim().toLowerCase()}@articlezip.app`;
+
         try {
             if (isSignUp) {
-                if (!displayName.trim()) {
-                    setAuthError('이름을 입력해주세요.');
-                    setAuthLoading(false);
-                    return;
-                }
-                await emailSignUp(email, password, displayName);
+                await emailSignUp(internalEmail, password, username.trim());
             } else {
-                await emailSignIn(email, password);
+                await emailSignIn(internalEmail, password);
             }
             setShowAuthModal(false);
             resetForm();
         } catch (error: any) {
             const code = error?.code || '';
             if (code === 'auth/email-already-in-use') {
-                setAuthError('이미 등록된 이메일입니다.');
+                setAuthError('이미 사용 중인 아이디입니다.');
             } else if (code === 'auth/weak-password') {
                 setAuthError('비밀번호는 6자 이상이어야 합니다.');
-            } else if (code === 'auth/invalid-email') {
-                setAuthError('유효하지 않은 이메일 형식입니다.');
             } else if (code === 'auth/user-not-found' || code === 'auth/wrong-password' || code === 'auth/invalid-credential') {
-                setAuthError('이메일 또는 비밀번호가 올바르지 않습니다.');
+                setAuthError('아이디 또는 비밀번호가 올바르지 않습니다.');
             } else {
                 setAuthError('인증 오류가 발생했습니다. 다시 시도해주세요.');
             }
@@ -221,27 +228,15 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                             <div className="flex-1 h-px bg-white/10"></div>
                         </div>
 
-                        {/* Email Form */}
-                        <form onSubmit={handleEmailAuth} className="space-y-3">
-                            {isSignUp && (
-                                <div>
-                                    <label className="block text-xs font-medium text-slate-400 mb-1">이름</label>
-                                    <input
-                                        type="text"
-                                        value={displayName}
-                                        onChange={(e) => setDisplayName(e.target.value)}
-                                        placeholder="표시할 이름"
-                                        className="w-full px-4 py-2.5 bg-slate-700/50 border border-white/10 rounded-xl text-white placeholder-slate-500 text-sm focus:outline-none focus:border-yellow-400/50 focus:ring-1 focus:ring-yellow-400/20 transition-all"
-                                    />
-                                </div>
-                            )}
+                        {/* ID/Password Form */}
+                        <form onSubmit={handleAuth} className="space-y-3">
                             <div>
-                                <label className="block text-xs font-medium text-slate-400 mb-1">이메일</label>
+                                <label className="block text-xs font-medium text-slate-400 mb-1">아이디</label>
                                 <input
-                                    type="email"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    placeholder="email@example.com"
+                                    type="text"
+                                    value={username}
+                                    onChange={(e) => setUsername(e.target.value)}
+                                    placeholder="사용할 아이디 입력"
                                     required
                                     className="w-full px-4 py-2.5 bg-slate-700/50 border border-white/10 rounded-xl text-white placeholder-slate-500 text-sm focus:outline-none focus:border-yellow-400/50 focus:ring-1 focus:ring-yellow-400/20 transition-all"
                                 />
@@ -258,6 +253,20 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                                     className="w-full px-4 py-2.5 bg-slate-700/50 border border-white/10 rounded-xl text-white placeholder-slate-500 text-sm focus:outline-none focus:border-yellow-400/50 focus:ring-1 focus:ring-yellow-400/20 transition-all"
                                 />
                             </div>
+                            {isSignUp && (
+                                <div>
+                                    <label className="block text-xs font-medium text-slate-400 mb-1">비밀번호 확인</label>
+                                    <input
+                                        type="password"
+                                        value={passwordConfirm}
+                                        onChange={(e) => setPasswordConfirm(e.target.value)}
+                                        placeholder="비밀번호 다시 입력"
+                                        required
+                                        minLength={6}
+                                        className="w-full px-4 py-2.5 bg-slate-700/50 border border-white/10 rounded-xl text-white placeholder-slate-500 text-sm focus:outline-none focus:border-yellow-400/50 focus:ring-1 focus:ring-yellow-400/20 transition-all"
+                                    />
+                                </div>
+                            )}
 
                             {/* Error message */}
                             {authError && (
@@ -271,8 +280,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                                 disabled={authLoading}
                                 className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-yellow-400 hover:bg-yellow-300 text-slate-900 rounded-xl font-bold text-sm transition-all duration-200 shadow-lg shadow-yellow-400/20 disabled:opacity-50"
                             >
-                                <Mail className="w-4 h-4" />
-                                {authLoading ? '처리 중...' : (isSignUp ? '회원가입' : '이메일로 로그인')}
+                                <UserPlus className="w-4 h-4" />
+                                {authLoading ? '처리 중...' : (isSignUp ? '회원가입' : '로그인')}
                             </button>
                         </form>
 
