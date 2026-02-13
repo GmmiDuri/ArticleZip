@@ -1,6 +1,14 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";
+import {
+    getAuth,
+    GoogleAuthProvider,
+    signInWithPopup,
+    signOut,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    updateProfile
+} from "firebase/auth";
 import type { UserArticleSelection } from "../types";
 
 const firebaseConfig = {
@@ -43,6 +51,35 @@ export const signOutUser = async () => {
         console.log("[Firebase Auth] Signed out");
     } catch (error) {
         console.error("[Firebase Auth] Sign-out error:", error);
+        throw error;
+    }
+};
+
+/**
+ * 이메일/비밀번호 회원가입
+ */
+export const signUpWithEmail = async (email: string, password: string, displayName: string) => {
+    try {
+        const result = await createUserWithEmailAndPassword(auth, email, password);
+        await updateProfile(result.user, { displayName });
+        console.log("[Firebase Auth] Signed up:", displayName);
+        return result.user;
+    } catch (error) {
+        console.error("[Firebase Auth] Sign-up error:", error);
+        throw error;
+    }
+};
+
+/**
+ * 이메일/비밀번호 로그인
+ */
+export const signInWithEmail = async (email: string, password: string) => {
+    try {
+        const result = await signInWithEmailAndPassword(auth, email, password);
+        console.log("[Firebase Auth] Email sign-in:", result.user.displayName);
+        return result.user;
+    } catch (error) {
+        console.error("[Firebase Auth] Email sign-in error:", error);
         throw error;
     }
 };

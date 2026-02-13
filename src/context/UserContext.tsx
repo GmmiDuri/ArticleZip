@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import type { User, UserPreference, Editorial } from '../types';
 import { updateUserVector } from '../services/recommendationService';
 import { trackArticleClick } from '../services/articleService';
-import { auth, signInWithGoogle, signOutUser } from '../services/firebase';
+import { auth, signInWithGoogle, signOutUser, signInWithEmail, signUpWithEmail } from '../services/firebase';
 import { onAuthStateChanged } from 'firebase/auth';
 
 interface UserContextType {
@@ -13,6 +13,8 @@ interface UserContextType {
     updateInterests: (categories: string[]) => void;
     signIn: () => Promise<void>;
     signOut: () => Promise<void>;
+    emailSignIn: (email: string, password: string) => Promise<void>;
+    emailSignUp: (email: string, password: string, name: string) => Promise<void>;
 }
 
 const UserContext = createContext<UserContextType | undefined>(undefined);
@@ -147,6 +149,14 @@ export const UserProvider: React.FC<{ children: React.ReactNode }> = ({ children
         console.log(`[User Context] Interests updated: ${categories}. New Vector:`, newVector);
     };
 
+    const emailSignIn = async (email: string, password: string) => {
+        await signInWithEmail(email, password);
+    };
+
+    const emailSignUp = async (email: string, password: string, name: string) => {
+        await signUpWithEmail(email, password, name);
+    };
+
     return (
         <UserContext.Provider value={{
             user,
@@ -155,7 +165,9 @@ export const UserProvider: React.FC<{ children: React.ReactNode }> = ({ children
             readArticle,
             updateInterests,
             signIn,
-            signOut: handleSignOut
+            signOut: handleSignOut,
+            emailSignIn,
+            emailSignUp
         }}>
             {children}
         </UserContext.Provider>
